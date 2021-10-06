@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  csd-service:
+    container_name: csd-container
+    build: .
+    image: csd-image
+    tty: true
+    ports:
+      - '1234:1234'
+    volumes: 
+      - .:/CSD
+    
